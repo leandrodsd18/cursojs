@@ -1,0 +1,16 @@
+let logico = true;
+let num = 10;
+let texto = "10";
+document.write(logico + "<br/>");
+logico = num == texto;
+document.write(logico + "<br/>");
+logico = num === texto;
+document.write(logico + "<br/>");
+logico = num != texto;
+document.write(logico + "<br/>");
+logico = num !== texto;
+document.write(logico + "<br/>");
+logico = num > texto;
+document.write(logico + "<br/>");
+logico = num >= texto;
+document.write(logico + "<br/>");
