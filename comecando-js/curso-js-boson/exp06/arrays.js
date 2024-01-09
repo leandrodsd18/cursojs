@@ -2,7 +2,7 @@ let Cidades=["Bagé", "Lavras do Sul", "Hulha Negra", "Dom Pedrito"];
 let cidade;
 //aceesando o elemento 1 do array
 cidade= Cidades[1];
-document.write("A cidade é: " + cidade + "<br/>");
+document.write("A cidade é: " + cidade + "<br/> <br/>");
 //Escrevendo na tela todos os elementos do array
 for(i=0; i<4; i++){
     document.write(Cidades[i] + "<br/>")
