@@ -55,7 +55,7 @@ for(i=0; i<Cidades.length; i++){
     document.write(Cidades[i] + "<br/>");
 }    
 document.write("Posições do array = " + Cidades.length + "<br/><br/>");
-
+//Unindo arrays em um só
 document.write("Método concat(): <br/>");
 let Sudeste=["SP","RJ","ES","MG"];
 let Nordeste=["PI","MA","CE","RN","PB","PE","SE","AL","BA"];
@@ -64,9 +64,19 @@ let Sul=["PR","SC","RS"];
 let CentroOeste=["MS","MT","GO","DF"];
 
 let Estados = Sudeste.concat(Nordeste,Norte,Sul,CentroOeste);
-document.write("<br/>Listando os Estados <br/><br/>");
-
+document.write("<br/>Listando os Estados e colocando em ordem alfabetica com o método sort(): <br/><br/>");
+//Ordenando o array em ordem alfabética
 Estados.sort();
 for(i=0; i<Estados.length; i++){
     document.write(Estados[i]+"<br/>")
+}
+
+document.write("<br/>Ordenando numeros com o método sort: <br/>")
+var Valores = [15, 5, 3, 22, 12, 35, 44, 41,98,25,1];
+function ordenaNum(a,b){
+    return a > b ?1: a < b ?-1 : 0;
+}
+Valores.sort(ordenaNum)
+for(i=0; i<Valores.length; i++){
+    document.write(Valores[i] + (", "));
 }
