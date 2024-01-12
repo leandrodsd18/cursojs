@@ -80,3 +80,13 @@ Valores.sort(ordenaNum)
 for(i=0; i<Valores.length; i++){
     document.write(Valores[i] + (", "));
 }
+
+document.write("<br/>Ordenando numeros em ordem decrescente com o método sort: <br/>")
+var Valores = [15, 5, 3, 22, 12, 35, 44, 41,98,25,1];
+function ordenaNumDecres(a,b){
+    return a < b ?1: a > b ?-1 : 0;
+}
+Valores.sort(ordenaNumDecres)
+for(i=0; i<Valores.length; i++){
+    document.write(Valores[i] + (", "));
+}
