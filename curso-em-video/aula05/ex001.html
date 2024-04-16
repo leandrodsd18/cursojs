@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(100, 100, 255);
+            color: white;
+            font: normal 18pt arial;
+        }
+        #area{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()"onmouseout="sair()">Interaja...</div>
+    <script>
+        var a = document.getElementById('area')
+        function clicar(){            
+            a.innerText = "Clicou"
+            a.style.background = "red"
+        }
+        function entrar(){
+            a.innerText = "Entrou"
+            a.style.cursor = "pointer"
+            a.style.background = "yellow"
+            a.style.color = "black"
+        }
+        function sair(){
+            a.innerText = "Interaja..."
+            a.style.background = "green"
+            a.style.color = "white"
+        }
+    </script>
 </body>
 </html>
