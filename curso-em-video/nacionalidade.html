@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <label for="origem">Digite o país de origem</label>
+    <input type="text" name="origem" id="origem">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var nascio = document.querySelector('input#origem')
+            var origem = String(nascio.value)
+            var res = document.querySelector('div#res')
+
+            res.innerHTML = `<p>O Seu país de origem é: ${origem}</p>`
+
+                if (origem == 'Brasil'){
+                    res.innerHTML += `<p>Voce é Brasileiro! Seja Bem Vindo de volta!</p>`
+                }
+                else{
+                    res.innerHTML += `<p>Você é estrangeiro! Seja Bem Vindo ao Brasil!</p>`
+                }
+        }
+    </script>
+    </body>
+    
+</body>
+</html>
