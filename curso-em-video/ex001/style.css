@@ -16,10 +16,15 @@ header{
 section{
     background-color: white;
     width: 500px;
+    height: 350px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     margin: auto;
+}
+div{
+    margin: 20px;
+
 }
 #imagem{
     background: url(imagens/manha.jpg) no-repeat;
@@ -31,7 +36,8 @@ section{
     height: 250px;
 }
 footer{
-    margin: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
     text-align: center;
-    color: white;
 }
