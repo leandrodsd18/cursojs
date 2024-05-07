@@ -22,10 +22,7 @@ section{
     margin: auto;
 }
 
-#imagem{
-    background: url(imagens/manha.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+#foto{
     margin: auto;
     border-radius: 150px;
     width: 250px;
