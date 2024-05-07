@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-size: normal 18px arial;
 }
 body{
@@ -20,6 +20,17 @@ section{
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     margin: auto;
+}
+#nasc{
+    text-align: center;
+    padding: 10px;
+}
+#sexo{
+    padding: 10px;
+}
+#botao{
+    text-align: center;
+    padding: 10px;
 }
 
 #foto{
