@@ -1,5 +1,5 @@
 var c = 0
-while(c <= 1000000){
+while(c <= 100){
     console.log(`Passo ${c}`)
     c++
 }
