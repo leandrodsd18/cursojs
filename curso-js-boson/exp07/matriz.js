@@ -1,11 +1,11 @@
 document.write("Criando matrizes em JavaScript <br/>" );
 var matriz = [
     ["Melão", "Banana"],
-    ["Pessego", "Morango"],
-    ["Uva", "Melancia"]
+    ["<br>Pessego", "Morango"],
+    ["<br>Uva", "Melancia"]
 ];
 //Escrevendo a matriz na tela em uma unica linha
-document.write("<br/>" + matriz);
+document.write("<br>" + matriz + "<br>");
 //Escrevendo a matriz na tela em uma unica coluna
 var valores= '';
 for(L=0; L<=2; L++){
@@ -13,7 +13,7 @@ for(L=0; L<=2; L++){
         valores += matriz[L][C] + "\n";
     }
 }
-alert(valores);
+document.write(valores);
 //Escrevendo a matriz na tela em formato de tabela
 var valores2 = '';
 
