@@ -40,3 +40,70 @@ function exibirVaga(){
         '\nCandidatos inscritos: ' + candidatosEmTexto
     )
 }
+//Função para inscrever um candidato em uma vaga
+function inscreverCandidato(){
+    const candidato = prompt('Informe o nome do(a) candidato(a):')
+    const indice = prompt('Digite o índice da vaga na qual deseja inscrever o candidato(a):')
+    const vaga = vagas[indice]
+
+    const confirmacao = confirm('Deseja inscrever o candidato(a)' + candidato + 'na vaga ' + indice + '?\n' + 'Nome: ' +vaga.nome + '\nDescrição: ' + vaga.descricao + '\nData Limite: ' + vaga.dataLimite)
+
+    if(confirmacao){
+        vaga.candidatos.push(candidato)
+        alert('Inscrição realizada')
+    }
+}
+//Função para excluir uma vaga
+function excluirVaga(){
+    const indice = prompt('Informe o indice da vaga que deseja excluir: ')
+    const vaga = vagas[indice]
+
+    const confirmacao = confirm('Tem certeza que deseja excluir a vaga ' + indice + '?\n' + 'Nome: ' +vaga.nome + '\nDescrição: ' + vaga.descricao + '\nData Limite: ' + vaga.dataLimite)
+    
+    if(confirmacao){
+        vagas.splice(indice, 1)
+        alert('Vaga excluida')
+    }
+}
+function exibirMenu(){
+    const opcao = prompt(
+        'Cadastro de vagas de emprego' +
+        '\n\nEscolha uma das opções'+
+        '\n1- Listar Vagas'+
+        '\n2- Criar vagas disponíveis'+
+        '\n3- Visualizar uma vaga'+
+        '\n4- Inscrever um(a) candidato(a)'+
+        '\n5- Excluir uma vaga'+
+        '\n6- Sair')
+    return opcao
+}
+function executar(){
+    let opcao = ''
+
+    do{
+        opcao = exibirMenu()
+        switch(opcao){
+            case '1':
+                listarVagas()
+                break
+            case '2':
+                novaVaga()
+                break
+            case '3':
+                exibirVaga()
+                break
+            case '4':
+                inscreverCandidato()
+                break
+            case '5':
+                excluirVaga()
+                break
+            case '6':
+                alert('Saindo...')
+                break
+            default:
+                alert('Opção invalida!')
+        }
+    }while(opcao !== '6');
+}
+executar()
