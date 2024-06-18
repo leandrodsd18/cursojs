@@ -7,6 +7,7 @@ function listarVagas(){
         textoFinal += indice + '. '
         textoFinal += vaga.nome 
         textoFinal += ' (' + vaga.candidatos.length + ' candidatos)\n'
+        return textoFinal
         }, '')
     alert(vagasEmTexto)
 }
@@ -29,7 +30,7 @@ function exibirVaga(){
     const indice = prompt('Informe o indice da vaga que deseja exibir:')
     const vaga = vagas[indice]
 
-    const candidatosEmTexto = vaga.candidatos.reduce(function (textoFinal, candidato){ textoFinal + '\n -' + candidato, ''})
+    const candidatosEmTexto = vaga.candidatos.reduce(function (textoFinal, candidato){return textoFinal + '\n -' + candidato}, '')
 
     alert(
         'Vaga n° ' + indice +
