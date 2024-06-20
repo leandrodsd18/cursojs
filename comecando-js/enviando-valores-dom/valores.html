@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviando valores do DOM para o JS</title>
+</head>
+<body>
+    <h1>Enviando valores do DOM para o JS</h1>
+    <hr>
+
+    <h2>Registre-se</h2>
+    <section>
+        <label for="userName">Nome do Usuário</label>
+        <input type="text" name="userName" id="userName">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password">
+        <label for="passwordConfirmation">Confirme sua senha</label>
+        <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+        <!--O argumento "this" referência o próprio objeto, nesse caso se fossse passado somente o 'this' faria referência ao <button>. Usando a propriedade 'parentNode' ele referencia a tag pai na qual está incluida, nesse caso a <section> -->
+        <button onclick="register(this.parentNode)">Registrar</button>
+    </section>
+
+    <script src="valores.js"></script>
+</body>
+</html>
