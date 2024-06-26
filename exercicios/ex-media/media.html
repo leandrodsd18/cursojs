@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media.css">
     <title>Calculando a Média</title>
 </head>
 <body>
@@ -11,9 +12,12 @@
         <div>
             <p>
                 <label for="notas">Digite as notas dos alunos</label>
+            </p>    
+            <p>
                 <input type="number" name="notas" id="notas">
                 <button onclick="adicionar()">Adicionar</button>
             </p>
+            
             <p><select name="listaNotas" id="listaNotas" size="10" aria-label="Notas da Turma"></select>  
             </p>
             <button onclick="calcularMedia()">Calcular Média</button>

@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+body{
+    text-align: center;
+}
+select{
+    text-align: center;
+    width: 250px;
+    
+}
