@@ -1,5 +1,5 @@
-let i =0
+let i =1
 do{
     console.log(i)
-    i += 1
-}while(i <=20)
+    i += 2
+}while(i <=1000)
