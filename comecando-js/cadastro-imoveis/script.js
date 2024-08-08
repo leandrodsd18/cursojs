@@ -18,12 +18,17 @@ do{
             imoveis.push(imovel)
             break
         case '2':
-            for(let i = 0; i<imoveis.length; i++){
+            if(imoveis.length ==0){
+                alert('Não há imóveis cadastrados')
+            }
+            else{
+                for(let i = 0; i<imoveis.length; i++){
                 alert('Imóvel' + (i+1) + 
                 '\nProprietário: ' + imoveis[i].proprietario +
                 '\nQuartos: ' + imoveis[i].quartos +
                 '\nBanheiros: ' + imoveis[i].banheiro +
                 '\nGaragem: ' + imoveis[i].garagem)
+                }
             }
             break
         case '3':
