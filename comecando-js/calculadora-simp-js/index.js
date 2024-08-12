@@ -1,3 +1,4 @@
+/*Nesse exercício criei uma calculadora bem simples onde o usuario entra com dois numeros, e o programa devolve a soma, subtração, divisão, multiplicação e o modulo desses dois numeros*/
 let a, b;
 
 a = prompt("Digite um numero: ");

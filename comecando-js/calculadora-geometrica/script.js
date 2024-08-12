@@ -1,3 +1,4 @@
+/*Nesse exercício criei algumas funções para calcular a area de algumas formas geometricas, e depois com um laço do while aninha a um switch criei um menu para o usuario escolher qual area quer calcular*/
 function triangulo(){
     const base = parseFloat(prompt('Digite o valor da base do triangulo'))
     const altura = parseFloat(prompt('Digite o valor da altura do triangulo'))

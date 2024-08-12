@@ -8,7 +8,7 @@ let escudo = prompt('O seu personagem possui escudo?(Digite sim ou não)')
 document.write(`<p>O personagem ${jogador1} possui ${ataqJ1} pontos de ataque</p>`)
 document.write(`<p>O personagem ${jogador2} está usando escudo? ${escudo} e tem ${pontosVida} pontos de vida</p>`)
 
-if(ataqJ1 > pontosVida && escudo == 'não'){
+if(ataqJ1 >= pontosVida && escudo == 'não'){
     let dano = ataqJ1 - pontosVida
     document.write(`<p>${jogador1} causou ${dano} de danos no ${jogador2}</p>`)
 }else if(ataqJ1 > pontosVida && escudo == 'sim'){
