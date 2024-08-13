@@ -1,3 +1,4 @@
+/*Nesse exercício criei um conversor de medidas que recebe um valor em metros e converte para uma das unidades de medidas cadastradas, utilizei um 'switch' para criar um menu onde o usuario escolhe para qual unidade de medida quer converter */
 let medida = prompt ('Digite uma medida em metros')
 let unidade = prompt('Para qual unidade deseja converter?'+
 '\n1- Milímetro'+
