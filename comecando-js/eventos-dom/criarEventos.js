@@ -1,5 +1,4 @@
 function register(ev){
-    console.log(ev)
     const sectionElement = ev.currentTarget.parentNode
     const username = sectionElement.children.username.value
     const password = sectionElement.children.password.value
@@ -11,6 +10,7 @@ function register(ev){
     else{
         alert('As senhas são diferentes')
     }
+    return ev
 }
 
 const button = document.getElementById("register-button")

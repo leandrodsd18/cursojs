@@ -10,20 +10,21 @@
     <hr>
 
     <h2>Registre-se</h2>
-    <section>
-        
-            <label for="username">Nome do Usuário</label>
+    <section>        
+        <p>
+            <label for="username">Login: </label>
             <input type="text" name="username" id="username">
-    
-        
-            <label for="password">Senha</label>
+            </p>        
+        <p>
+            <label for="password">Senha: </label>
             <input type="password" name="password" id="password">
-        
-        
-            <label for="passwordConfirmation">Confirme sua senha</label>
+        </p>        
+        <p>
+            <label for="passwordConfirmation">Confirme sua senha: </label>
             <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+        </p>
               
-        <button id="register-button">Registrar</button>
+        <button id= "register-button" onclick="register(this)">Registrar</button>
     </section>
 
     <script src="criarEventos.js"></script>
