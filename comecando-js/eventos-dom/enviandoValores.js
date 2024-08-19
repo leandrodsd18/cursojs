@@ -2,7 +2,7 @@
 
 /*a propriedade children no JavaScript retorna uma coleção com todos os elementos filhos do elemento HTML pelo qual foi chamado. */
 function register(element){
-    const userName = element.children.userName.value
+    const username = element.children.username.value
     const password = element.children.password.value
     const passwordConfirmation = element.children.passwordConfirmation.value
 
@@ -12,7 +12,7 @@ function register(element){
         alert('As senhas são diferentes')
     }
 
-    document.getElementById('userName').value = ''
+    document.getElementById('username').value = ''
     document.getElementById('password').value = ''
     document.getElementById('passwordConfirmation').value = ''
 }
