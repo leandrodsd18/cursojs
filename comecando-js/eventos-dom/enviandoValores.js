@@ -7,7 +7,7 @@ function register(element){
     const passwordConfirmation = element.children.passwordConfirmation.value
 
     if(password === passwordConfirmation){
-        alert('Usuária cadastrado com sucesso')
+        alert('Usuário(a) cadastrado com sucesso')
     }else{
         alert('As senhas são diferentes')
     }
