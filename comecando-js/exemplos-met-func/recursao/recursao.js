@@ -7,14 +7,14 @@ function dividir(num){
         return num
     }
 }
-//dividir()
+dividir(5)
 
 //É fundamental que uma função recursiva tenha uma forma de parar!
 function dobrar(num){
     console.log(num)
     dobrar(num*2)
 }
-//dobrar()//Vai estourar a pilha de chamadas, pq a função vai ficar dobrando o numero eternamente!
+//dobrar() Vai estourar a pilha de chamadas, pq a função vai ficar dobrando o numero eternamente!
 
 /*Para construir uma função recursiva, geralmente partimos de um caso base para garantir que nossa funão não vai continuar se chamando para sempre*/
 //Ex.: calcular o fatorial de um numero: !5 = 5*4*3*2*1 = 5*!4
@@ -31,4 +31,4 @@ function fatorial(num){
     }
 }
 console.log('\n!5 = '+ fatorial(5))
-console.log('\n!0 = '+ fatorial(0))
+console.log('\n!1 = '+ fatorial(1))
