@@ -1,3 +1,4 @@
+/*Exercício para treinar o uso do laço de repetição 'for' */
 const palavra = prompt('Informe uma palavra:')
 let palavraInvert = ''
 

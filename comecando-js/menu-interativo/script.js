@@ -1,3 +1,4 @@
+/*Criei um menu com o uso de 'do while' e 'switch' o menu é exibido em um 'prompt' e as opções são exibidas através de um 'alert' */
 let opcao = ''
 
 do{
