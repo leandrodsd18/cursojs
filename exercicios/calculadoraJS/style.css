@@ -70,3 +70,34 @@ input{
 #keys button:hover{
     filter: brightness(0.8);
 }
+#result{
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 .5 .5 0;
+}
+#copyToClipboard{
+    background-color: transparent;
+    border: solid var(--border-color);
+    border-width: 2px;
+    border-radius: .5rem 0 0 .5rem;
+    color: var(--font-color);
+    cursor: pointer;
+    display: block;
+    height: 4.25rem;
+    width: 6rem;
+}
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.error{
+    background-color: var(--error-color);
+}
+.success{
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
