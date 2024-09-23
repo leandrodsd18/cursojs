@@ -1,7 +1,7 @@
 //Variáveis globais
 const boardRegions = document.querySelectorAll('#gameBoard span')
 let vBoard = []
-let  turnPlayer =''
+let  turnPlayer = ''
 
 function updateTitle () {
     const playerInput = document.getElementById(turnPlayer)
@@ -52,7 +52,7 @@ function getWinRegions() {
   //Pinta as regiões onde o jogador venceu
   function handleWin(regions){
     regions.forEach(function (region){
-        document.querySelector('[data-region="' + region + ' "]')
+        document.querySelector('[data-region="' + region + ' "]').classList.add('win')
     })
     const playerName = document.getElementById(turnPlayer).value
     document.querySelector('h2').innerHTML = playerName + ' venceu'
@@ -79,8 +79,8 @@ function getWinRegions() {
     disableRegion(span)
     //verifica se alguem venceu
     const winRegions = getWinRegions()
-    if(winRegions.length >0){
-        handleWin(winRegions)
+    if(winRegions.length > 0){
+        console.log('Venceu')
     }else if(vBoard.flat().includes('')){
         turnPlayer = turnPlayer === 'player1'? 'player2' : 'player1'
         updateTitle()
